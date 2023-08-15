@@ -1,0 +1,55 @@
+/* Custom button styling */
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Camera dialog styling */
+.camera-dialog {
+  width: 70%;
+  max-width: 600px;
+  border: 2px solid #007bff; /* Add a border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.camera-dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Capture preview styling */
+.capture-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Upload button styling */
+.upload-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Styling for video and canvas */
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+canvas {
+  display: none;
+}

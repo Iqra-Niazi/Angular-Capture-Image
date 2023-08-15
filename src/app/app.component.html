@@ -1,0 +1,20 @@
+<div>
+  <button class="button" (click)="openCamera()">Open Camera</button>
+</div>
+
+<p-dialog [(visible)]="showImageModal" (onHide)="closeCamera()" class="camera-dialog">
+  
+  <div class="camera-dialog-content" *ngIf="!previewImage">
+    <p-header>Take Picture</p-header>
+    <canvas #canvas id="canvas"></canvas>
+    <video #video autoplay [style.transform]="videoTransform"></video>
+    <button  class="button" (click)="grabFrame()">Capture</button>
+  </div>
+
+  <div *ngIf="previewImage" class="capture-preview">
+    <p-header>Captured Picture</p-header>
+    <img [src]="previewImage" height="150" [style.transform]="videoTransform" />
+    <button class="upload-button" (click)="uploadImage($event)">Upload</button>
+  </div>
+</p-dialog>
+
